@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/iconCalculadora.png">
+</head>
+<body>
+  <div id="container">
+    <div id="containerResult">
+      <input type="text" id="resultado" placeholder="0">
+    </div>
+   <div id="containerCalculadora">
+  
+      <button onclick="limpar()" id="excluir">C</button>
+      <button onclick="parenteses()">( )</button>
+      <button onclick="colocar('%')">%</button>
+      <button onclick="colocar('/')"  class="calculos">÷</button>
+      
+      <button onclick="colocar(7)">7</button>
+      <button onclick="colocar(8)">8</button>
+      <button onclick="colocar(9)">9</button>
+      <button onclick="colocar('*')"  class="calculos">×</button>
+      
+      <button onclick="colocar(4)">4</button>
+      <button onclick="colocar(5)">5</button>
+      <button onclick="colocar(6)">6</button>
+      <button onclick="colocar('-')" class="calculos">-</button>
+      
+      <button onclick="colocar(1)">1</button>
+      <button onclick="colocar(2)">2</button>
+      <button onclick="colocar(3)">3</button>
+      <button onclick="colocar('+')"  class="calculos">+</button>
+      
+      
+      <button onclick="colocar(0)" id="border0" >0</button>
+      <button onclick="colocar('.')">.</button>
+      <button onclick="apagar()"><img src="images/excluir.png"></button>
+      <button onclick="calcular()" id="border1" id="sinalIgual">=</button>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

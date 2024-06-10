@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #94e39c;
+}
+
+#container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+}
+
+#resultado{
+  background-color: #575d57;
+  color: white;
+  width: 100%;
+  font-size: 2em;
+  text-align: right;
+  white-space: nowrap; 
+  overflow-x: auto;
+  outline: none;
+  border: none;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#containerCalculadora{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button{
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #a4ccbc;
+  color: white;
+  padding: 10px;
+}
+
+img{
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a4ccbc;
+}
+
+#border0{
+  border-bottom-left-radius: 10px;
+}
+
+#border1{
+  border-bottom-right-radius: 10px;
+}
+
+#excluir{
+  color: #5c8464;
+}
+
+.calculos{
+  color: #5c9a62;
+}
+
+#sinalIgual{
+  color:#5c9a62;
+}
+
+@media screen and (max-width: 249px) {
+  #container {
+    width: 95%;
+  }
+}
